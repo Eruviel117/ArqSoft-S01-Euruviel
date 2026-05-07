@@ -22,6 +22,39 @@ body {
     background-color: #0f0f1a;
     color: white;
 }
+
+.btn-catalogo {
+    background-color: #e94560;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tarjeta-info {
+    background-color: #1a1a2e;
+    border: 1px solid #e94560;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+.tarjeta-info h3 {
+    color: #e94560;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.tarjeta-info p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
 .catalogo-titulo {
     font-size: 36px;
     font-weight: bold;

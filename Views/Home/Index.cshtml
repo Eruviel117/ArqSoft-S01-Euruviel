@@ -2,7 +2,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div style="text-align: center; padding: 60px 20px 40px 20px;">
+    <h1 style="color: #e94560; font-size: 42px; font-weight: bold;">
+        🎌 Mi Catálogo de Anime
+    </h1>
+    <p style="color: #aaa; font-size: 18px; margin: 15px 0 30px 0;">
+        Lleva el registro de los animes que has visto, estás viendo o tienes pendientes.
+    </p>
+    <a href="/Catalogo" class="btn-catalogo">Ver Catálogo →</a>
+</div>
+
+<hr style="border-color: #333; margin: 0 30px;" />
+
+<!-- Sección de las 3 cajitas -->
+<div style="display: flex; gap: 20px; padding: 40px 30px; justify-content: center;">
+
+    <div class="tarjeta-info" style="flex: 1; max-width: 300px;">
+        <h3>📋 Ver Catálogo</h3>
+        <p>Explora todos los animes registrados y filtra por género para encontrar lo que buscas.</p>
+    </div>
+
+    <div class="tarjeta-info" style="flex: 1; max-width: 300px;">
+        <h3>➕ Agregar Anime</h3>
+        <p>Agrega nuevos animes a tu lista con su género, estudio, año y tu calificación personal.</p>
+    </div>
+
+    <div class="tarjeta-info" style="flex: 1; max-width: 300px;">
+        <h3>🔍 Filtrar</h3>
+        <p>Filtra tu catálogo por género o por estado: Viendo, Terminado o Pausado.</p>
+    </div>
+
 </div>
