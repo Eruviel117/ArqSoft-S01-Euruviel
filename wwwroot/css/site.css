@@ -229,6 +229,93 @@ body {
 }
 
 
+/* PÁGINA DE DETALLE --------- */
+.detalle-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px 30px;
+    align-items: flex-start;
+}
+
+/* Lado izquierdo - imagen */
+.detalle-imagen {
+    background-color: #1a1a2e;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    min-width: 280px;
+    max-width: 280px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #e94560;
+}
+
+    .detalle-imagen p {
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+/* Lado derecho - información */
+.detalle-info {
+    background-color: #1a1a2e;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+}
+
+    .detalle-info h1 {
+        color: #e94560;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+.detalle-linea {
+    width: 60px;
+    height: 4px;
+    background-color: #e94560;
+    margin-bottom: 20px;
+}
+
+.detalle-info p {
+    color: #ccc;
+    font-size: 15px;
+    margin: 10px 0;
+    border-bottom: 1px solid #2a2a4a;
+    padding-bottom: 10px;
+}
+
+.detalle-descripcion {
+    color: #aaa !important;
+    font-size: 14px !important;
+    line-height: 1.7;
+    border-bottom: none !important;
+    margin-top: 15px !important;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 25px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #2a2a4a;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+    .btn-volver:hover {
+        border-color: #e94560;
+        color: #e94560;
+    }
+
+
 
 .catalogo-titulo {
     font-size: 36px;
