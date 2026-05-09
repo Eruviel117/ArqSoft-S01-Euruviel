@@ -19,18 +19,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Inicio</a>
+                            <a class="nav-link nav-custom" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index" style="color: white;">Catalogo</a>
+                            <a class="nav-link nav-custom" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white;">Privacidad</a>
+                            <a class="nav-link nav-custom" asp-controller="Catalogo" asp-action="Agregar">Agregar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Agregar" style="color: white;">Agregar</a>
+                            <a class="nav-link nav-custom" asp-controller="Catalogo" asp-action="Estadisticas">Estadísticas</a>
                         </li>
                     </ul>
                 </div>
@@ -43,9 +43,12 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - catalogo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer style="background-color: #0a0a14; border-top: 1px solid #2a2a4a; padding: 30px 0; margin-top: 60px;">
+        <div class="container text-center">
+            <p style="color: #e94560; font-size: 20px; font-weight: bold; margin-bottom: 5px;">
+                🎌 catalogo
+            </p>
+            <p style="color: #555; font-size: 12px;">© 2026 - Hecho con ❤️ para los fans del anime</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

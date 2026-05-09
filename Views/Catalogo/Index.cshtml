@@ -84,18 +84,4 @@
 
 </div>
 
-<hr />
 
-<!-- Lista de item -->
-
-<ul>
-    @foreach (var item in Model)
-    {
-        <li>
-            <a asp-action="Detalle" asp-route-id="@item.Id">@item.Titulo</a>
-            -- @item.Genero (@item.Ano)
-        </li>
-    }
-</ul>
-
-<hr />

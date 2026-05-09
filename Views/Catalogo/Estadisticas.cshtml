@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Estadísticas";
+    var items = ViewBag.Items as List<catalogo.Models.Item>;
+
+    var total = items.Count;
+    var terminados = items.Count(i => i.Estado == "Terminado");
+    var viendo = items.Count(i => i.Estado == "Viendo");
+    var pausados = items.Count(i => i.Estado == "Pausado");
+
+    var generoTop = items
+        .GroupBy(i => i.Genero)
+        .OrderByDescending(g => g.Count())
+        .FirstOrDefault();
+
+    var promedioCalif = items.Average(i => i.Calificacion);
+    var mejorAnime = items.OrderByDescending(i => i.Calificacion).FirstOrDefault();
+}
+
+<div style="padding: 40px 30px;">
+
+    <h1 class="catalogo-titulo">Estadísticas</h1>
+    <div class="catalogo-linea"></div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px;">
+        <div class="tarjeta-stat">
+            <div class="stat-numero">@total</div>
+            <div class="stat-label">📋 Total de Animes</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="stat-numero" style="color: #2ecc71;">@terminados</div>
+            <div class="stat-label">✅ Terminados</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="stat-numero" style="color: #3498db;">@viendo</div>
+            <div class="stat-label">▶️ Viendo</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="stat-numero" style="color: #f39c12;">@pausados</div>
+            <div class="stat-label">⏸️ Pausados</div>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="tarjeta-stat">
+            <div class="stat-numero" style="color: #e94560;">@generoTop?.Key</div>
+            <div class="stat-label">🎭 Género más visto</div>
+            <div class="stat-sub">@generoTop?.Count() animes</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="stat-numero">⭐ @promedioCalif.ToString("F1")</div>
+            <div class="stat-label">Calificación Promedio</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="stat-numero" style="color: #e94560; font-size: 22px;">@mejorAnime?.Titulo</div>
+            <div class="stat-label">🏆 Mejor Calificado</div>
+            <div class="stat-sub">@mejorAnime?.Calificacion / 10</div>
+        </div>
+    </div>
+
+</div>

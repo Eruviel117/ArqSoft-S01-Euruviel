@@ -17,7 +17,7 @@ namespace Catalogo.Controllers
         Estado = "Terminado",
         Calificacion = 9,
         Descripcion = "Un joven aldeano se une a un grupo de asesinos para luchar contra un imperio corrupto.",
-        ImagenUrl = "/img/Akame ga kill.jpg"
+        ImagenUrl = "/img/Akame_ga_kill.jpg"
     },
     new Item {
         Id = 2,
@@ -146,7 +146,7 @@ namespace Catalogo.Controllers
         ImagenUrl = "/img/Horimiya.jpeg"
     },
 
-    // ===== ACCIÓN =====
+    
     new Item {
         Id = 13,
         Titulo = "Fire Force",
@@ -159,7 +159,7 @@ namespace Catalogo.Controllers
         ImagenUrl = "/img/Fire force.jpeg"
     },
 
-    // ===== AVENTURA =====
+    
     new Item {
         Id = 14,
         Titulo = "JoJo's Bizarre Adventure",
@@ -172,7 +172,7 @@ namespace Catalogo.Controllers
         ImagenUrl = "/img/Jojos.png"
     },
 
-    // ===== ROMANCE =====
+    
     new Item {
         Id = 15,
         Titulo = "Nisekoi",
@@ -198,6 +198,11 @@ namespace Catalogo.Controllers
             ViewBag.GeneroActual = genero;
 
             return View(resultado);
+        }
+        public IActionResult Estadisticas()
+        {
+            ViewBag.Items = _items;
+            return View();
         }
 
         // Detalle
