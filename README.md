@@ -51,3 +51,18 @@ El proyecto sigue el patrón **Modelo - Vista - Controlador**:
 -  Diseño oscuro estilo anime con tema rojo y azul oscuro
 
 ---
+##  Capturas de pantalla
+
+### Página Principal
+![Inicio](Captura%20de%20pantalla%202026-05-08%20210107.png)
+
+### Catálogo
+![Catalogo](Captura%20de%20pantalla%202026-05-08%20210159.png)
+
+### Detalle
+![Detalle](Captura%20de%20pantalla%202026-05-08%20210212.png)
+
+### Estadísticas
+![Estadisticas](Captura%20de%20pantalla%202026-05-08%20210222.png)
+
+---
